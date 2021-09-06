@@ -1,9 +1,14 @@
+
 public class Point{
-	public int x;
+	protected int x;
+	protected int y;
 	
-	public Point(){ 
+	public Point(Point p){
+		this.x=p.x;
+	}
+	public Point(int a){ 
 	System.out.println("appel du constructeur Point");
-	this.x=-1; 
+	this.x=a; 
 	}
 
 	public void publicDeplacer(){
